@@ -1,5 +1,10 @@
 "use client";
+import { redirect } from 'next/navigation'
+
 import React from "react";
+import { FaGithub } from "react-icons/fa";
+
+
 
 const ProfilePage = () => {
   const user = {
@@ -98,3 +103,4 @@ const ProfilePage = () => {
 };
 
 export default ProfilePage;
+

@@ -16,7 +16,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="flex">
         
-        <main className="flex-1 p-4 h-screen w-screen bg-gray-300">
+        <main className="flex-1 h-screen w-screen bg-gray-300">
           {children}
         </main>
       </body>
