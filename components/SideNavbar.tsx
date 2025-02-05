@@ -33,7 +33,7 @@ const SideNavBar: React.FC = () => {
   };
 
   return (
-    <div className="p-5 pt-3 w-1/2 h-screen bg-white z-20 fixed lg:w-60 flex flex-col">
+    <div className="p-5 pt-3 w-1/2 h-screen bg-white z-20 fixed lg:w-60 flex flex-col shadow-xl">
       
       <div className="">
         <Image src="/logo.png" width={190} height={50} alt="Logo" />

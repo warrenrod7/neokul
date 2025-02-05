@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 import { useRouter } from "next/navigation";
 
@@ -6,25 +7,35 @@ export default function AuthPage() {
   const router = useRouter();
 
   return (
-    <div className="flex items-center justify-center h-screen bg-gray-100">
-      <div className="bg-white shadow-lg rounded-xl p-8 w-96 text-center">
-        <h1 className="text-2xl font-bold text-gray-800 mb-6">Welcome to our platform!</h1>
+    <div className="bg-white h-full ">
+      <Image src="/logo.png" alt="neokul" width={230} height={60}/>
+      <h1 className="text-6xl font-bold text-blue-700  text-center pt-10 ">Welcome to our platform!</h1>
+      <div className="flex justify-center">
+      <Image src="/platform.jpg" alt="welcome" height={100} width={900}/>
+      </div>
+    
+    
+      
+      <div className="flex flex-row space-x-60  mt-10 justify-center">
+       
+        
        
         
         <button
           onClick={() => router.push("/login")}
-          className="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition mb-4"
+          className="bg-blue-600 rounded-3xl w-20 h-10 text-white h-12 w-40"
         >
-          Sign In
+          Login
         </button>
 
         <button
           onClick={() => router.push("/signup")}
-          className="w-full bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 transition"
+          className="bg-blue-600 rounded-3xl w-20 h-10 text-white h-12 w-40"
         >
           Sign Up
         </button>
       </div>
-    </div>
+      </div>
+    
   );
 }

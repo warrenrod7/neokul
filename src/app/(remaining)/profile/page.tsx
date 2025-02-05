@@ -1,8 +1,8 @@
 "use client";
-import { redirect } from 'next/navigation'
+
 
 import React from "react";
-import { FaGithub } from "react-icons/fa";
+
 
 
 
@@ -32,14 +32,14 @@ const ProfilePage = () => {
   };
 
   return (
-    <div className="flex min-h-screen bg-gray-50 ml-60 ">
+    <div className="flex min-h-screen bg-gray-50  ">
       {/* Left Sidebar */}
       <div className="w-1/3 bg-white shadow-md p-4">
         <div className="text-center">
           <img
-            src="/avatar-placeholder.png"
+            src="/profile.jpg"
             alt="Profile Avatar"
-            className="w-24 h-24 rounded-full mx-auto"
+            className="w-30 h-30 rounded-full mx-auto"
           />
           <h2 className="mt-4 text-xl font-semibold">{user.name}</h2>
           <button className="mt-2 text-blue-600 border border-blue-600 px-4 py-1 rounded">

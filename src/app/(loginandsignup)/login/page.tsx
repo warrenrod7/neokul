@@ -8,7 +8,7 @@ export default function LoginPage() {
         <Image src="/logo.png" width={300} height={60} alt="Logo" />
       </div>
       
-      <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+      <div className="bg-white p-8  w-full max-w-md">
         <div className="space-y-4">
           <div className="flex flex-col">
             <h1 className='text-3xl flex justify-center mb-6'>Login</h1>

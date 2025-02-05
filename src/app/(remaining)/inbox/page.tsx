@@ -41,7 +41,7 @@ const ChatPage = () => {
   return (
     <div className="flex min-h-screen">
       {/* Left Sidebar */}
-      <div className="w-60 bg-gray-100">{/* Sidebar already built */}</div>
+      <div className="bg-gray-100">{/* Sidebar already built */}</div>
 
       {/* User List */}
       <div className=" bg-white border-r ">

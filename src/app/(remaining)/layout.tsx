@@ -16,12 +16,12 @@ export default function RootLayout({
     <html lang="en">
       <body className="flex h-screen">
         {/* Sidebar on the left with a fixed width */}
-        <aside className="w-64 h-full bg-gray-200 text-white fixed">
+        <aside className="w-64 h-full  text-white fixed">
           <SideNavBar />
         </aside>
 
         {/* Main content area, with margin-left equal to sidebar width */}
-        <main className="flex-1 p-4 ml-64 bg-gray-200 h-full overflow-auto">
+        <main className="flex-1 p-4 ml-64 bg-white h-full overflow-auto ">
           {children}
         </main>
       </body>
