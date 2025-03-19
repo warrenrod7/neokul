@@ -67,24 +67,7 @@ const SideNavBar: React.FC = () => {
             <h3 className="text-base text-gray-800 font-semibold">Notification</h3>
           </div>
         </Link>
-        <Link href ="/groupchat">
-        <div className="flex mb-2 mt-5 justify-start items-center gap-4 pl-5 p-2 rounded-md group">
-        <h3 className="text-base text-gray-800 font-semibold space-x-2">💻 My Projects</h3></div>
-                  <div className="mt-2 space-y-2 gap-4 pl-5 p-2 ">
-                    <div className="flex items-center  text-gray-700 hover:bg-gray-300 cursor-pointer hover:shadow-lg">
-                      <FaPlus /> <span>Create Project</span>
-                    </div>
-                    <div className="flex items-center space-x-2 text-gray-700 hover:bg-gray-300 cursor-pointer hover:shadow-lg">
-                      <FaLaptop /> <span>Project 1</span>
-                    </div>
-                    <div className="flex items-center space-x-2 text-gray-700 hover:bg-gray-300 cursor-pointer hover:shadow-lg">
-                      <FaLaptop /> <span>Project 2</span>
-                    </div>
-                    <div className="flex items-center space-x-2 text-gray-700 hover:bg-gray-300 cursor-pointer hover:shadow-lg">
-                      <FaLaptop /> <span>Project 3</span>
-                    </div>
-                  </div>
-             </Link>
+       
       </div>
 
       {/* Logout Button */}
