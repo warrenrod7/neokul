@@ -2,7 +2,7 @@ import { type NextRequest, NextResponse } from "next/server";
 import { updateSession } from "@/utils/supabase/middleware";
 
 export async function middleware(request: NextRequest) {
-  const publicRoutes = ["/", "/signup", "/login"];
+  const publicRoutes = ["/", "/signup", "/login","/reset","/reset/update-password"];
 
   // Allow access to public pages without authentication
   if (publicRoutes.includes(request.nextUrl.pathname)) {

@@ -2,12 +2,14 @@
 import React, { useState } from "react";
 
 const ChatPage = () => {
+  
   // Demo user and chat data
   const users = [
     { id: 1, name: "Warren Rodrigues", profilePicture: "/avatar-placeholder.png", lastMessage: "Hey, I've made updates to the login feature." },
     { id: 2, name: "Ruchi", profilePicture: "/avatar-placeholder.png", lastMessage: "I fixed the bug in the payment gateway." },
     { id: 3, name: "Siddhant Prabhudesai", profilePicture: "/avatar-placeholder.png", lastMessage: "I'm working on session handling." },
   ];
+  
 
   const [selectedUser, setSelectedUser] = useState(users[0]);
   const [messages, setMessages] = useState([
@@ -41,11 +43,11 @@ const ChatPage = () => {
   return (
     <div className="flex min-h-screen">
       {/* Left Sidebar */}
-      <div className="bg-gray-100">{/* Sidebar already built */}</div>
+     
 
       {/* User List */}
       <div className=" bg-white border-r ">
-        <h3 className="text-lg font-bold p-4 border-b bg-gray-200">Users</h3>
+        <h3 className="text-lg font-bold p-4 border-b bg-gray-200 ">Users</h3>
         <ul>
           {users.map((user) => (
             <li
@@ -56,7 +58,7 @@ const ChatPage = () => {
               }`}
             >
               <img
-                src={user.profilePicture}
+                src="/profile.jpg"
                 alt="Profile"
                 className="w-10 h-10 rounded-full mr-4"
               />
@@ -70,11 +72,11 @@ const ChatPage = () => {
       </div>
 
       {/* Chat Area */}
-      <div className="flex-1 flex flex-col bg-white shadow-md">
+      <div className="flex-1 flex flex-col shadow-md">
         {/* Header */}
         <div className="flex items-center p-4 bg-gray-200 shadow-sm">
           <img
-            src={selectedUser.profilePicture}
+            src='/profile.jpg'
             alt="Profile"
             className="w-10 h-10 rounded-full mr-4"
           />
@@ -107,7 +109,7 @@ const ChatPage = () => {
         </div>
 
         {/* Input Area */}
-        <div className="flex items-center p-4 border-t">
+        <div className="flex items-center p-4 border-t ">
           <input
             type="text"
             placeholder="Type a message..."
