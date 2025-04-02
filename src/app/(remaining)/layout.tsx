@@ -1,4 +1,4 @@
-import SideNavBar from '../../../components/SideNavbar';
+import SideNavBar from '../../components/SideNavbar';
 import '../globals.css';
 import type { Metadata } from "next";
 
