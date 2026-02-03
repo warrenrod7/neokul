@@ -1,28 +1,17 @@
 'use client'
-import { createClient } from '@/utils/supabase/client'
-
-interface Props {
+import { supabase } from '@/utils/supabase/client'
+type Props = {
   mode?: 'signin' | 'signup'
 }
 
-export default function GoogleLogin({ mode = 'signin' }: Props) {
-  const supabase = createClient()
 
+export default function GoogleLogin({ mode = 'signin' }: Props) {
   const handleGoogleLogin = async () => {
     const { error } = await supabase.auth.signInWithOAuth({
       provider: 'google',
-      options: {
-        redirectTo: `${window.location.origin}/auth/callback`,
-        queryParams: {
-          access_type: 'offline',
-          prompt: 'select_account'
-        }
-      }
     })
 
-    if (error) {
-      console.error('Error with Google auth:', error.message)
-    }
+    if (error) console.error(error.message)
   }
 
   return (
@@ -35,4 +24,4 @@ export default function GoogleLogin({ mode = 'signin' }: Props) {
        Continue with Google
     </button>
   )
-} 
+}
